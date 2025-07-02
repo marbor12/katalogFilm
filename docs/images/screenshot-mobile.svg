@@ -1,0 +1,39 @@
+<!-- Placeholder for Mobile Screenshot - Replace with actual screenshot -->
+<svg width="360" height="640" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#1a1a1a"/>
+  
+  <!-- Mobile Header -->
+  <rect x="0" y="0" width="100%" height="60" fill="#e50914"/>
+  <text x="180" y="35" text-anchor="middle" fill="white" font-family="Arial" font-size="16" font-weight="bold">Katalog Film</text>
+  <text x="30" y="35" fill="white" font-family="Arial" font-size="20">☰</text>
+  
+  <!-- Search Bar -->
+  <rect x="20" y="80" width="320" height="40" fill="#333" rx="20"/>
+  <text x="30" y="105" fill="#888" font-family="Arial" font-size="14">🔍 Cari film...</text>
+  
+  <!-- Movie List Mobile -->
+  <rect x="20" y="140" width="320" height="120" fill="#444" rx="8"/>
+  <rect x="30" y="150" width="80" height="100" fill="#666" rx="4"/>
+  <text x="130" y="170" fill="white" font-family="Arial" font-size="14" font-weight="bold">Film Indonesia 1</text>
+  <text x="130" y="190" fill="#ccc" font-family="Arial" font-size="12">Genre: Drama</text>
+  <text x="130" y="210" fill="#ccc" font-family="Arial" font-size="12">⭐ 4.5/5</text>
+  
+  <rect x="20" y="280" width="320" height="120" fill="#444" rx="8"/>
+  <rect x="30" y="290" width="80" height="100" fill="#666" rx="4"/>
+  <text x="130" y="310" fill="white" font-family="Arial" font-size="14" font-weight="bold">Film Indonesia 2</text>
+  <text x="130" y="330" fill="#ccc" font-family="Arial" font-size="12">Genre: Komedi</text>
+  <text x="130" y="350" fill="#ccc" font-family="Arial" font-size="12">⭐ 4.2/5</text>
+  
+  <rect x="20" y="420" width="320" height="120" fill="#444" rx="8"/>
+  <rect x="30" y="430" width="80" height="100" fill="#666" rx="4"/>
+  <text x="130" y="450" fill="white" font-family="Arial" font-size="14" font-weight="bold">Film Indonesia 3</text>
+  <text x="130" y="470" fill="#ccc" font-family="Arial" font-size="12">Genre: Horor</text>
+  <text x="130" y="490" fill="#ccc" font-family="Arial" font-size="12">⭐ 4.0/5</text>
+  
+  <!-- Bottom Navigation -->
+  <rect x="0" y="580" width="100%" height="60" fill="#333"/>
+  <text x="45" y="615" text-anchor="middle" fill="white" font-family="Arial" font-size="10">🏠 Home</text>
+  <text x="135" y="615" text-anchor="middle" fill="white" font-family="Arial" font-size="10">🎬 Movies</text>
+  <text x="225" y="615" text-anchor="middle" fill="white" font-family="Arial" font-size="10">⭐ Favorit</text>
+  <text x="315" y="615" text-anchor="middle" fill="white" font-family="Arial" font-size="10">➕ Add</text>
+</svg>
