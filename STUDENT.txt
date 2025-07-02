@@ -1,0 +1,45 @@
+Nama: [Isi dengan Nama Lengkap Anda]
+Email: [Isi dengan Email Dicoding Anda]  
+ID Submission: [Isi dengan ID Submission dari Dicoding]
+
+APP_URL=[Isi dengan URL deployment setelah deploy, contoh: https://katalog-film-anda.netlify.app]
+DEPLOYMENT_URL=[Isi dengan URL deployment yang sama seperti APP_URL]
+MAP_SERVICE_API_KEY=your_leaflet_or_google_maps_api_key_here
+STORY_API_BASE_URL=https://story-api.dicoding.dev/v1
+
+PWA Features Implemented:
+✅ Push Notification dengan VAPID key dari Story API
+✅ Service Worker untuk offline support dan caching
+✅ Web App Manifest untuk installable PWA
+✅ IndexedDB untuk menyimpan, menampilkan, dan menghapus data favorites
+✅ Application Shell architecture untuk performa optimal
+✅ Responsive design dan accessibility support
+✅ Single Page Application dengan smooth transitions
+✅ API integration untuk semua data dari Story API Dicoding
+
+BONUS - Optional Features Implemented:
+✅ App Shortcuts (3 shortcuts: Add Movie, Favorites, Browse Movies)
+✅ Screenshots (Desktop 1280x720 + Mobile 360x640)
+✅ Workbox Advanced Offline (5 caching strategies + background sync)
+✅ 404 Not Found Page (user-friendly dengan animations dan quick search)
+
+Deployment Platform: [Isi setelah deploy: Netlify/Firebase/GitHub Pages/Vercel]
+Build Date: [Akan diisi otomatis saat deploy]
+Submission Status: READY FOR SUBMISSION ✅
+
+Technical Features:
+- MVP Architecture Pattern dengan Presenter classes
+- Vanilla JavaScript (no frameworks)  
+- Webpack untuk bundling dan optimization
+- Push Notification dengan VAPID key
+- IndexedDB dengan 3 object stores (favorites, movies, settings)
+- Service Worker dengan cache strategies
+- Workbox integration untuk advanced offline capabilities
+- 5 different caching strategies (Cache First, Network First, Stale While Revalidate)
+- Background sync untuk failed requests
+- App shortcuts dan screenshots untuk platform-specific experience
+- 404 Not Found page dengan interactive features
+- Offline-first approach
+- Cross-browser compatibility
+- Mobile-responsive design
+- Accessibility dengan ARIA labels

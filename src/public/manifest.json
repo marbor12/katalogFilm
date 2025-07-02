@@ -1,0 +1,83 @@
+{
+  "name": "Katalog Film Indonesia",
+  "short_name": "KatalogFilm",
+  "description": "Aplikasi katalog film Indonesia dengan fitur berbagi lokasi dan foto",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#e50914",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Tambah Film Baru",
+      "short_name": "Tambah Film",
+      "description": "Langsung ke halaman tambah film baru dengan lokasi",
+      "url": "/#/add-movie",
+      "icons": [
+        {
+          "src": "images/logo.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Film Favorit",
+      "short_name": "Favorit",
+      "description": "Lihat koleksi film favorit Anda",
+      "url": "/#/favorites",
+      "icons": [
+        {
+          "src": "images/logo.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Jelajahi Film",
+      "short_name": "Jelajahi",
+      "description": "Jelajahi semua film di katalog",
+      "url": "/#/movies",
+      "icons": [
+        {
+          "src": "images/logo.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "images/screenshot-desktop.svg",
+      "sizes": "1280x720",
+      "type": "image/svg+xml",
+      "form_factor": "wide",
+      "label": "Halaman utama Katalog Film di desktop dengan daftar film terbaru"
+    },
+    {
+      "src": "images/screenshot-mobile.svg",
+      "sizes": "360x640",
+      "type": "image/svg+xml",
+      "form_factor": "narrow",
+      "label": "Halaman utama Katalog Film di mobile dengan navigasi responsif"
+    }
+  ],
+  "categories": ["entertainment", "multimedia"],
+  "lang": "id"
+}
