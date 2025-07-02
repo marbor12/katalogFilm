@@ -32,9 +32,9 @@ async function unregisterOldServiceWorkers() {
 async function registerServiceWorker() {
   if ("serviceWorker" in navigator) {
     try {
-      const registration = await navigator.serviceWorker.register(
-        "/service-worker.js"
-      );
+      // Gunakan path relatif terhadap base URL
+      const swPath = "service-worker.js";
+      const registration = await navigator.serviceWorker.register(swPath);
       console.log("Service Worker registered successfully:", registration);
 
       // Update service worker when new version is available

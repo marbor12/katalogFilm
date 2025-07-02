@@ -19,8 +19,11 @@ import {
 } from "workbox-strategies";
 import { ExpirationPlugin } from "workbox-expiration";
 
+// Base path for GitHub Pages - akan diganti webpack
+const BASE_PATH = "/katalogFilm";
+
 // Version untuk cache busting
-const VERSION = "v2";
+const VERSION = "v3";
 
 // Clean up old caches first
 cleanupOutdatedCaches();

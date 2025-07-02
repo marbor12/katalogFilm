@@ -11,6 +11,7 @@
       // which works with hash-based routing
 
       const segmentCount = 1; // Adjust this based on your repo structure
+      const repositoryName = "katalogFilm"; // Your repository name
       const redirectToHome = () => {
         const l = window.location;
         l.replace(
@@ -18,6 +19,9 @@
             "//" +
             l.hostname +
             (l.port ? ":" + l.port : "") +
+            "/" +
+            repositoryName +
+            "/#" +
             l.pathname
               .split("/")
               .slice(0, 1 + segmentCount)

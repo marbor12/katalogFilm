@@ -9,7 +9,7 @@ Jika Anda menghadapi masalah dengan deployment GitHub Pages di mana hanya navbar
 GitHub Pages menghosting aplikasi di subpath berdasarkan nama repository (misalnya: `/katalogFilm/`), bukan di root domain. Solusi:
 
 - Tambahkan tag `<base href="/katalogFilm/">` di `index.html`
-- Ubah `publicPath` di webpack menjadi `/katalogFilm/` 
+- Ubah `publicPath` di webpack menjadi `/katalogFilm/`
 - Perbarui semua URL di `manifest.json` dengan prefix `/katalogFilm/`
 
 ### 2. Service Worker Registration
