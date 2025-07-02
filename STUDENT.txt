@@ -2,8 +2,8 @@ Nama: [Isi dengan Nama Lengkap Anda]
 Email: [Isi dengan Email Dicoding Anda]  
 ID Submission: [Isi dengan ID Submission dari Dicoding]
 
-APP_URL=[Isi dengan URL deployment setelah deploy, contoh: https://katalog-film-anda.netlify.app]
-DEPLOYMENT_URL=[Isi dengan URL deployment yang sama seperti APP_URL]
+APP_URL=https://marbor12.github.io/katalogFilm/
+DEPLOYMENT_URL=https://marbor12.github.io/katalogFilm/
 MAP_SERVICE_API_KEY=your_leaflet_or_google_maps_api_key_here
 STORY_API_BASE_URL=https://story-api.dicoding.dev/v1
 
