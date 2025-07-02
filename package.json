@@ -5,10 +5,11 @@
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "start-dev": "webpack serve --config webpack.dev.js",
-    "serve": "http-server dist",
-    "deploy:netlify": "npm run build && echo 'Build complete. Upload dist folder to netlify.com'",
+    "serve": "http-server docs",
+    "deploy:netlify": "npm run build && echo 'Build complete. Upload docs folder to netlify.com'",
     "deploy:firebase": "npm run build && firebase deploy",
-    "deploy:gh-pages": "npm run build && gh-pages -d dist",
+    "deploy:gh-pages": "npm run build && gh-pages -d docs",
+    "deploy:docs": "npm run build && git add docs && git commit -m 'Update docs for GitHub Pages' && git push",
     "predeploy": "npm run build",
     "test:pwa": "npm run build && npm run serve"
   },
