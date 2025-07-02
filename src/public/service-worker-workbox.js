@@ -8,6 +8,8 @@ import {
   registerRoute,
   setDefaultHandler,
   setCatchHandler,
+  NavigationRoute,
+  Route,
 } from "workbox-routing";
 import {
   StaleWhileRevalidate,
@@ -17,11 +19,30 @@ import {
 } from "workbox-strategies";
 import { ExpirationPlugin } from "workbox-expiration";
 
+// Version untuk cache busting
+const VERSION = "v2";
+
+// Clean up old caches first
+cleanupOutdatedCaches();
+
+// Always fetch main HTML from network - prevent stale content issues
+registerRoute(
+  ({ request }) => request.mode === "navigate",
+  new NetworkFirst({
+    cacheName: `html-cache-${VERSION}`,
+    networkTimeoutSeconds: 5,
+    plugins: [
+      new ExpirationPlugin({
+        maxEntries: 10,
+        maxAgeSeconds: 60 * 60, // 1 hour
+        purgeOnQuotaError: true,
+      }),
+    ],
+  })
+);
+
 // Precache all static assets
 precacheAndRoute(self.__WB_MANIFEST || []);
-
-// Clean up old caches
-cleanupOutdatedCaches();
 
 // Cache strategies for different types of resources
 
@@ -32,7 +53,7 @@ registerRoute(
     request.destination === "style" ||
     request.destination === "image",
   new CacheFirst({
-    cacheName: "static-assets-v2",
+    cacheName: `static-assets-${VERSION}`,
     plugins: [
       new ExpirationPlugin({
         maxEntries: 100,

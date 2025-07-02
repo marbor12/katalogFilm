@@ -80,15 +80,20 @@ class App {
 
   async renderPage() {
     const url = getActiveRoute();
+    console.log("Rendering page for URL:", url);
     let page = routes[url];
+    console.log("Found page component:", page ? "Yes" : "No");
 
     // Handle 404 - route not found
     if (!page || !isValidRoute(url, routes)) {
+      console.log("Route not found, showing 404 page");
       const notFoundRoute = getNotFoundRoute();
       page = routes[notFoundRoute];
+      console.log("404 page available:", page ? "Yes" : "No");
 
       if (!page) {
         // Fallback if 404 page doesn't exist
+        console.log("No 404 page found, showing fallback message");
         this.#content.innerHTML = `
           <div class="error-state">
             <i class="fas fa-exclamation-triangle error-icon" aria-hidden="true"></i>
